@@ -1,35 +1,48 @@
+
 <!DOCTYPE html>
-<html lang="en" class="nojs">
+<html lang="en-US" class="nojs">
+<!--Declare header arguments.-->
 <head>
-  <title>HTML Form Elements</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="css/screen.css" />
+    <title>Lab 3</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+    <link rel="stylesheet" media="screen" href="screen.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto%7CMiltonian+Tattoo' rel='stylesheet' type='text/css'>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
 </head>
 <body>
-<main id="content">
-  <form method="get" action="#null">
-    <h1>Get Our Newsletter</h1>
-    <p>
-      Sign up to be first to receive the lastest news
-      and breaking alerts right in your inbox.
-    </p>
-    <ol>
-      <li id="input-email">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" pattern="^.+@.+$" />
-      </li>
-      <li id="input-age-verification">
-        <input type="checkbox" id="age-verification" name="age-verification" value="18" />
-        <label for="age-verification">I am 18 years of age or older and there is no denying that this is true</label>
-      </li>
-      <li id="input-submit">
-        <input type="submit" name="submit" id="submit" value="Subscribe" />
-      </li>
-    </ol>
-  </form>
-</main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/site.js"></script>
+	<div id="mostcontent">
+		<div id="form">
+			<div id="subscription_input_fields">
+			<form method="get" action="#null">	
+				<h1>Information Form</h1>
+				<ul>
+					<li>
+						<!--Email Address field is requested for email alerts-->
+						<strong>Email Address:</strong>
+					</li>
+					<li>					
+						<input type="email" name="email_field" placeholder="email@email.com">
+					</li>						
+					<li>
+						<!--Phone Number field is requested for general contact purposes as well as text alerts-->
+						<strong>Phone Number:</strong>
+					</li>
+					<li>					
+						<input type="text" name="phone_field" placeholder="773-555-5555">
+					</li>
+					<li>
+						<!--Date of Birth field is requested for general purposes as well as age verification-->
+						<strong>Date of Birth:</strong>
+					</li>					
+					<li>					
+						<input type="date" name="date_field" >
+					</li>
+				</ul>
+				
+				<input type="submit" value="Submit">
+			 </div>
+		</div>
+	</div>
 </body>
 </html>

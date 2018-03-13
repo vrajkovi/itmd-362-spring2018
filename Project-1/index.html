@@ -1,0 +1,118 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->         	<script async
+    src="https://www.googletagmanager.com/gtag/js
+    id=UA-107564147-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-107564147-1');
+    </script>
+    <title>Subscribe To Dippity Muninicipal Solutions</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen" href="screen.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto%7CMiltonian+Tattoo' rel='stylesheet' type='text/css'>
+	<meta http-equiv="refresh" content="30; url=https://www.facebook.com/DippityMunicipalSolutions/" />
+	
+</head>
+<body>
+	<div id="">
+		<img id="dms-jpg-header" src="images/dms.jpg" alt=""/>
+		<h1>Welcome to Dippity Municipal Solutions!</h1>
+		<h2>Subscribe to receive updates and more information!</h2>
+		<div id="form">
+		
+			<div id="subscription_input_fields">
+				<form action="formscript.php" >
+					<ul>
+						<li>
+							<!--First Name field is requested for sorting purposes-->
+							<strong>First Name:</strong>
+						</li>
+						<li>
+							<input type="text" name="first_name_field" placeholder="John">
+						</li>
+						
+						<li>
+							<!--Last Name field is requested for sorting purposes-->
+							<strong>Last Name:</strong>
+						</li>
+						<li>					
+							<input type="text" name="last_name_field" placeholder="Smith">
+						</li>
+						
+						<li>
+							<!--Phone Number field is requested for general contact purposes as well as text alerts-->
+							<strong>Phone Number:</strong>
+						</li>
+						<li>					
+							<input type="text" name="phone_field" placeholder="773-555-5555">
+						</li>
+						
+						<li>
+							<!--Email Address field is requested for email alerts-->
+							<strong>Email Address:</strong>
+						</li>
+						<li>					
+							<input type="email" name="email_field" placeholder="email@email.com">
+						</li>
+							  
+						<li>
+							<!--Gender field is requested to help decide how events are planned-->
+							<strong>Gender:</strong>
+						</li>
+						<li>					
+								<input type="radio" name="gender_field" value="Male">Male
+								<input type="radio" name="gender_field" value="Female">Female
+						</li>
+				
+						<li>
+							<!--Age field is requested for general curiosity-->
+							<strong>Age:</strong>
+						</li>
+						<li>					
+								<select name="age_field">
+									<option>0-18</option>
+									<option>18-24</option>
+									<option>25-34</option>
+									<option>35-44</option>
+									<option>45-54</option>
+									<option>55-64</option>
+									<option>65 and over</option>
+								</select>
+						</li>
+
+						<li>
+							<strong>Comments:</strong>
+						</li>
+						<li>					
+							<textarea name="comments_field" rows="6" cols="25" placeholder="This Website is Awesome!"></textarea>
+						</li>
+					</ul>
+					
+					<input type="submit" value="Subscribe">
+					
+				 </form>
+			 </div>
+		</div>
+		<h2> We'll automatically redirect you to our Facebook Page in <span id="countdowntimer">30 </span> Seconds</h2>
+		<script type="text/javascript">
+			var timeleft = 30;
+			var downloadTimer = setInterval(function(){
+			timeleft--;
+			document.getElementById("countdowntimer").textContent = timeleft;
+			if(timeleft <= 0)
+				clearInterval(downloadTimer);
+			},1000);
+		</script>
+		<p><a href="https://www.facebook.com/DippityMunicipalSolutions/">Click Here To Manually Redirect</a></p>
+	</div>
+</body>
+</html>

@@ -1,7 +1,20 @@
-## ITMD 362 Lab 3: Form Styling and Web Fonts
+## ITMD 362, Lab 3: Form Semantics and Normalized Styles
 
-For this Lab, build off the existing CSS, including its baseline grid and typographic (modular) scale, and design a mobile-scale form that
-uses only shades of gray (no solid borders) for the input regions. Favor an open design with plenty of padding and white space.
+In the `index.html` file in this directory, create a form that asks for a user’s email address,
+phone number, and date of birth. There should also be a submit button.
 
-Then, set up the `font-family` with a robust font stack (3 fonts deep) made up of commonly available system fonts. You might 
-use a site like https://fonts.google.com to get yourself started.
+Be sure to:
+
+* Use the best HTML `<input>` types
+* Use additional HTML `<input>` attributes to present mobile keyboards suited to the input task
+* Use semantically associated `<label>` tags
+* Use some kind of semantic grouping structure in HTML to keep labels and inputs together
+
+Then, in the `screen.css` file, do the following:
+
+* Open with a rich set of reset CSS styles (such as Eric Meyer’s used in class demos)
+* Include a set of normalization styles for your forms (such as the Form area of Normalize.css)
+* Use CSS to stylalize the form between a scroll friendly mobile first, and a sectioned desktop version. 
+
+As with all labs, be sure that you are doing multiple, granular/atomic commits as you
+complete your work.
