@@ -19,7 +19,7 @@ html {
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  /* Modular Scale ---------------------- 18px @ 1:1.5	 ----------------------*/
+  /* Modular Scale ---------------------- 1.125em aka 18px @ 1:1.5	 ----------------------*/
   font-size: 1.125em;
   line-height: 1.34em;
   
@@ -30,6 +30,15 @@ html {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
+}
+
+body {
+  max-width: 40em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 img {
@@ -54,7 +63,7 @@ p {
 }
 h1{
   font-family: Arial, Helvetica, Sans-Serif;
-  font-size: 64px;
+  font-size: 4em;
   line-height: 2em;
   background-color: transparent;
   color: #4c4c4c;
@@ -92,6 +101,13 @@ a:hover {
 /* selected link */
 a:active {
     color: #80fff0;
+}
+
+#dms-jpg-header {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* fade*/
 @keyframes fadein {
@@ -161,3 +177,14 @@ a:active {
   text-align: center;*/
   background-color: transparent;
  }
+ 
+@media screen and (max-width: 32em) {
+   h1 {
+     font-size: 2em;
+   }
+}
+@media screen and (max-width: 25em) {
+   img {
+     max-width: 60%;
+   }
+}
